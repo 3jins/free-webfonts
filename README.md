@@ -1,5 +1,5 @@
 # free-webfonts
-무료 한글 폰트는 많지만 웹폰트로 쓸 수 있는 공식적인 url이 항상 있는 것은 아닙니다. ~~사실 [프로젝트 눈누](http://noonnu.cc/) 같은 좋은 서비스가 있지만 갑자기 터질 수도 있으니 백업으로 하나 만들어둡시다.~~
+무료 한글 폰트는 많지만 웹폰트로 쓸 수 있는 공식적인 url이 항상 있는 것은 아닙니다. 항상 그 자리를 지키고 있어서 믿고 쓸 수 있는 웹폰트 url을 함께 만들어 봅시다. ~~사실 [프로젝트 눈누](http://noonnu.cc/) 같은 좋은 서비스가 있지만 갑자기 터질 수도 있으니 백업으로 하나 만들어둡시다.~~
 
 
 
@@ -24,14 +24,10 @@
     font-weight: normal;
     src: 
       local('BusanBada'), 
-      url(https://cdn.rawgit.com/3jin/free-webfonts/master/BusanBada/BusanBada.woff) format('woff'), 
-      url(https://cdn.rawgit.com/3jin/free-webfonts/master/BusanBada/BusanBada.ttf) format('ttf');
+      url(https://raw.githubusercontent.com/3jin/free-webfonts/master/BusanBada/BusanBada.woff) format('woff'), 
+      url(https://raw.githubusercontent.com/3jin/free-webfonts/master/BusanBada/BusanBada.ttf) format('ttf');
 }
 ```
-
-url 값은 CDN 서비스를 이용합시다. ex) [https://rawgit.com](https://rawgit.com)
-
-RawGit을 이용할 경우 url에 해시값 대신 master를 넣어줘야 자동으로 최신 파일이 반영됩니다.
 
 #### README.md
 
@@ -52,12 +48,8 @@ RawGit을 이용할 경우 url에 해시값 대신 master를 넣어줘야 자동
 css, sass, scss, less 등 사용하시는 css파일에 다음과 같이 필요한 폰트의 css파일을 임포트해주시면 됩니다.
 
 ```css
-@import url('https://cdn.rawgit.com/3jin/free-webfonts/master/BusanBada/BusanBada.css')
+@import url('https://raw.githubusercontent.com/3jin/free-webfonts/master/BusanBada/BusanBada.css')
 ```
-
-#### 주의
-
-css 파일을 CDN 서비스에 의존해서 받아오기 때문에 중요한 서비스인 경우, 신뢰할 수 있는 유료 CDN 서비스를 이용하시거나 폰트를 직접 받아서 사용하시는 것을 추천드립니다.
 
 
 

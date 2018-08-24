@@ -4,6 +4,6 @@
   font-weight: normal;
   src:
     local('BusanBada'),
-    url(https://cdn.rawgit.com/3jin/free-webfonts/master/BusanBada/BusanBada.woff) format('woff'),
-    url(https://cdn.rawgit.com/3jin/free-webfonts/master/BusanBada/BusanBada.ttf) format('ttf');
+    url(https://raw.githubusercontent.com/3jin/free-webfonts/master/BusanBada/BusanBada.woff) format('woff'), 
+    url(https://raw.githubusercontent.com/3jin/free-webfonts/master/BusanBada/BusanBada.ttf) format('ttf');
 }
